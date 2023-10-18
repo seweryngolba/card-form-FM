@@ -9,16 +9,31 @@
   <body>
     <div class="container">
       <div class="cards">
-        <img
-          class="card-design front-card"
-          src="images/bg-card-front.png"
-          alt="front card"
-        />
-        <img
-          class="card-design back-card"
-          src="images/bg-card-back.png"
-          alt="back card"
-        />
+        <div class="front-side">
+          <div class="front-details">
+            <img class="card-logo" src="images/card-logo.svg" alt="card logo" />
+            <h2 class="card-display-number">0000 0000 0000 0000</h2>
+            <div class="name-date">
+              <p class="display-name">JANE APPLESEED</p>
+              <p class="display-date">00/00</p>
+            </div>
+          </div>
+          <img
+            class="card-design front-card"
+            src="images/bg-card-front.png"
+            alt="front card"
+          />
+        </div>
+        <div class="back-side">
+          <div class="back-details">
+            <p class="cvc-back">000</p>
+          </div>
+          <img
+            class="card-design back-card"
+            src="images/bg-card-back.png"
+            alt="back card"
+          />
+        </div>
       </div>
       <div class="form">
         <div class="form-name">
@@ -30,17 +45,19 @@
           <input type="text" placeholder="e.g. 1234 5678 9123 0000" />
         </div>
         <div class="card-details">
-          <div class="exp-date">
+          <div class="card-dates">
             <p>Exp. Date (MM/YY)</p>
-            <input type="text" placeholder="MM" />
-            <input type="text" placeholder="YY" />
+            <div class="exp-date">
+              <input type="text" placeholder="MM" />
+              <input type="text" placeholder="YY" />
+            </div>
           </div>
           <div class="cvc-code">
             <p>CVC</p>
             <input type="text" placeholder="e.g. 123" />
           </div>
         </div>
-        <button>Confirm</button>
+        <button class="confirm-button">Confirm</button>
       </div>
     </div>
     <!-- 0000 0000 0000 0000 Jane Appleseed 00/00 000 Cardholder Name Card Number -->
