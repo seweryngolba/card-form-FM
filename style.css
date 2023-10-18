@@ -103,6 +103,7 @@ body {
 
 .form {
   display: flex;
+  height: 360px;
   flex-direction: column;
   gap: 20px;
   margin-top: -20px;
@@ -181,4 +182,43 @@ p {
   color: hsl(0, 100%, 66%);
   margin-bottom: -10px;
   visibility: hidden;
+}
+
+.thank-you {
+  display: none;
+  height: 360px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: -20px;
+}
+
+.complete-icon {
+  margin: 20px 0;
+  width: 80px;
+}
+
+.thanks-title {
+  letter-spacing: 4px;
+  color: hsl(278, 68%, 11%);
+  font-size: 28px;
+}
+
+.thanks-description {
+  color: hsl(279, 6%, 55%);
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.continue-button {
+  border: none;
+  height: 50px;
+  width: 100%;
+  border-radius: 6px;
+  background: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  cursor: pointer;
 }
